@@ -1,8 +1,18 @@
 $(document).ready(function () {
-    let tarefa =$('#tarefa')
-    $('#tarefa').on.keyup(function (e) { 
-        if (tarefa.length <=3) {
-          
-        }
-    });
-});
+    var tarefa = $('#tarefa')
+    const tarefas_salvas = [] 
+
+    $('#confirmar').click(function (e) { 
+        let valortarefa = tarefa.val().trim()
+        tarefas_salvas.push(valortarefa)
+
+      if (tarefa.val.length === '') {
+             alert('esreva algo por favor')  
+       
+      } else {
+        $('#tarefas_salvas').append(`<li>${valortarefa}</li>`) 
+
+        console.log(tarefas_salvas);
+      }          
+    }); 
+}); 
