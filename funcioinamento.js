@@ -1,18 +1,13 @@
 $(document).ready(function () {
     var tarefa = $('#tarefa')
-    const tarefas_salvas = [] 
+    var tarefanome = $('#tarefanome')
+    
+    $('#confirmar').click(()=>  { 
 
-    $('#confirmar').click(function (e) { 
-        let valortarefa = tarefa.val().trim()
-        tarefas_salvas.push(valortarefa)
-
-      if (tarefa.val.length === '') {
-             alert('esreva algo por favor')  
-       
+      if (tarefanome.val().trim()=== '')  {
+        alert('Adicione a sua tarefa')
       } else {
-        $('#tarefas_salvas').append(`<li>${valortarefa}</li>`) 
-
-        console.log(tarefas_salvas);
-      }          
-    }); 
-}); 
+      $('#confirmacao').css({'display':'block'}).animate({opacity: 1}, 1000)
+      }
+    });
+});

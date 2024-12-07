@@ -51,3 +51,8 @@ input {
     color: brown; 
     display: none; /*somente vai parecer essa div quando a tarefa for confirmada */
 }
+
+#confirmar:hover {
+  background-color: brown;
+  color: white;
+}
