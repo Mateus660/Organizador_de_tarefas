@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+
+}
+#telacadastro {
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    color:  brown;
+    font-size: large;
+    padding: 10px;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+#inputs {
+   margin-top: 15px;
+}
+
+input {
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+       
+} 
+
+#login {
+    background-color: brown;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    width: 90%;
+    height: 40px;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+#login:hover {
+    height: 50px;
+    width: 95%;
+    font-size: large;
+}
+
+#nome {
+    margin-bottom: 20px;
+}
+
+
