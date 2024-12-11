@@ -60,3 +60,11 @@ input {
     margin-top: 20px;
     padding: 12px;
 }
+
+#confirmsenha {
+  border-color: rgba(0, 0, 0, 0.397);
+}
+
+#labelnome > p {
+    display: none;
+}

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de cadastro</title>
     <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
@@ -13,7 +15,7 @@
             <header><h1>Cadastre-se</h1></header>
 
             <div id="botoes">
-                <label for="get" id="labelnome">
+                <label for="get" id="labelnome"><p>No minimo 3 letras</p>
                     <input type="text" name="nome" id="nome" placeholder="insira seu nome">
                 </label>
                 
@@ -26,7 +28,7 @@
                 </label>
                 
                 <label for="get" id="labelconfirmsenha">
-                    <input type="password" name="cofirmsenha" id="confirmmsenha" placeholder="confirme a senha">
+                    <input type="password" name="cofirmsenha" id="confirmsenha" placeholder="confirme a senha">
                 </label>
             </div>
 
