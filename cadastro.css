@@ -26,7 +26,7 @@ body {
     background-color:  white;
     color: brown;
     width: 280px;
-    height: 350px;
+    height: 100%;
     padding: 20px;
     border-radius: 10px;
     align-items: center;
@@ -67,5 +67,28 @@ input {
 
 #labelnome > p {
     display: none;
-    color: black;
+    color: brown;
+    text-align: left;
+    font-size: 17px;
+}
+
+#labelusuario > p {
+    display: none;
+    color: brown;
+    text-align: left;
+    font-size: 17px;
+}
+
+#labelsenha > p {
+    display: none;
+    color: brown;
+    text-align: left;
+    font-size: 17px;
+}
+
+#labelconfirmsenha > p {
+    display: none;
+    color: brown;
+    text-align: left;
+    font-size: 17px;
 }
