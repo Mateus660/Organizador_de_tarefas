@@ -46,4 +46,21 @@ $(document).ready(function () {
             labelconfirmsenha.css({'display':'none'});      
            }      
     });
-});
+
+
+    $('#cadastrar').click(function (e) { 
+      e.preventDefault();
+
+    const dadosUsuario = { nome, usuario, senha };
+    localStorage.setItem("usuario", JSON.stringify(dadosUsuario));
+
+    alert("Cadastro realizado com sucesso!");
+
+    // Limpa os campos após o cadastro
+    $("#nome").val("");
+    $("#usuario").val("");
+    $("#senha").val("");
+    $("#confirmsenha").val("");
+
+  });
+  });

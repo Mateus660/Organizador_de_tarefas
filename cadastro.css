@@ -92,3 +92,11 @@ input {
     text-align: left;
     font-size: 17px;
 }
+
+#limpar {
+    background-color: brown;
+    color: white;
+    width: 90%;
+    padding: 4px;
+
+}
