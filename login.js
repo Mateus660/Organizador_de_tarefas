@@ -4,6 +4,12 @@ $(document).ready(function () {
         const nomeLogin = $("#nome").val().trim();
         const senhaLogin = $("#senha").val().trim();
 
+        // Verifica se os campos estão preenchidos
+        if (nomeLogin === "" || senhaLogin === "") {
+            alert("Por favor, preencha todos os campos.");
+            return;
+        }
+
         // Recupera os dados do cadastro armazenados no localStorage
         const dadosUsuario = JSON.parse(localStorage.getItem("usuario"));
 
