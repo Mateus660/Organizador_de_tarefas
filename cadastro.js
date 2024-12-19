@@ -87,4 +87,13 @@ $(document).ready(function () {
       senha.val("");
       confirmsenha.val("");
   });
+
+  $('#limpar').click(function (e) { 
+    e.preventDefault();
+    
+    nome.val("");
+    usuario.val("");
+    senha.val("");
+    confirmsenha.val("");
+  });
 });
