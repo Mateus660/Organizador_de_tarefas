@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: brown;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#tarefas_adicionadas {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tarefa-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.tarefa-item p {
+    margin: 0;
+}

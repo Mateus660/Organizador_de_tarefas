@@ -23,7 +23,7 @@ $(document).ready(function () {
         if (dadosUsuario.usuario === nomeLogin && dadosUsuario.senha === senhaLogin) {
             alert("Login realizado com sucesso!");
             // Redireciona para a página principal após o login bem-sucedido
-            window.location.href = "http://127.0.0.1:5500/site.html";
+            window.location.href = "http://127.0.0.1:5500/HTML/site.html";
         } else {
             alert("Usuário ou senha incorretos. Tente novamente.");
         }
