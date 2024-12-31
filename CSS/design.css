@@ -6,65 +6,115 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.conteiner {
+    padding: 20px;
+}
+
 #titulo {
     background-color: brown;
     color: white;
     width: 100%;
-    height: 100px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h2 {
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown;
-}
-
-#tarefas {
-    text-align: center;
-    display: block;
-    margin: auto;
-    margin-top: 40px;
-    background-color: brown;
-    color: white;
-    display: none;
 }
 
 #titulo > h1 {
-    margin-top: 10px;
+    margin: 0;
+    font-size: 2rem;
 }
 
-input {
-    height: 50px;
-    width: 500px;
+h2 {
+    font-size: 1.8rem;
+    color: brown;
     text-align: center;
-    font-size: 20px;
-    margin-top: 10px;
 }
 
+#tarefanome, #confirmar {
+    width: 90%;
+    max-width: 500px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+}
 
+#confirmar:hover {
+    background-color: brown;
+    color: white;
+}
 
 #botoes {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os elementos no centro horizontalmente */
-    gap: 10px; /* Espaçamento entre os botões */
+    align-items: center;
+    gap: 10px;
 }
 
 #confirmacao {
     text-align: center;
     margin-top: 100px;
-    font-size: 40px;
-    font-family:Arial, Helvetica, sans-serif;
-    color: brown; 
-    display: none; /*somente vai parecer essa div quando a tarefa for confirmada */
+    font-size: 1.5rem;
+    color: brown;
+    display: none;
 }
 
-#confirmar:hover {
-  background-color: brown;
-  color: white;
+#tarefas {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #titulo {
+        padding: 10px;
+    }
+
+    #titulo > h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #tarefanome, #confirmar {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    #confirmacao {
+        font-size: 1.2rem;
+    }
+
+    #tarefas {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo > h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #confirmacao {
+        font-size: 1rem;
+    }
 }
